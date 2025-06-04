@@ -1,0 +1,22 @@
+@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Erro";
+}
+
+<h1 class="text-danger">Erro.</h1>
+<h2 class="text-danger">Ocorreu um erro ao processar sua solicitação.</h2>
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>ID da Solicitação:</strong> <code>@Model.RequestId</code>
+    </p>
+}
+
+<h3>O que você pode fazer:</h3>
+<ul>
+    <li>Volte para a <a href="/">página inicial</a></li>
+    <li>Verifique se a URL está correta</li>
+    <li>Entre em contato com o suporte se o problema persistir</li>
+</ul>

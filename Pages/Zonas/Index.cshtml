@@ -1,0 +1,53 @@
+@page
+@model AquaMind.API.Pages.Zonas.IndexModel
+@{
+    ViewData["Title"] = "Zonas de Irrigação";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">@ViewData["Title"]</h3>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Descrição</th>
+                                    <th>Área (m²)</th>
+                                    <th>Tipo de Cultura</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var zona in Model.Zonas)
+                                {
+                                    <tr>
+                                        <td>@zona.Nome</td>
+                                        <td>@(zona.Descricao ?? "N/A")</td>
+                                        <td>@(zona.Area?.ToString("N2") ?? "N/A")</td>
+                                        <td>@(zona.TipoCultura ?? "N/A")</td>
+                                        <td>
+                                            @if (zona.Ativa)
+                                            {
+                                                <span class="badge badge-success">Ativa</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge badge-danger">Inativa</span>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

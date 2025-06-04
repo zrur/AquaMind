@@ -1,0 +1,85 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "AquaMind - Sistema de Irrigação Inteligente";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem-vindo ao AquaMind</h1>
+    <p class="lead">Sistema Inteligente de Irrigação e Monitoramento de Umidade</p>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card zone-card">
+            <div class="card-body text-center">
+                <i class="fas fa-map-marked-alt fa-3x text-success mb-3"></i>
+                <h5 class="card-title">Zonas de Irrigação</h5>
+                <p class="card-text">Gerencie suas zonas de irrigação e monitore o status de cada área.</p>
+                <a href="/Zonas" class="btn btn-success">Acessar Zonas</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card sensor-card">
+            <div class="card-body text-center">
+                <i class="fas fa-thermometer-half fa-3x text-primary mb-3"></i>
+                <h5 class="card-title">Sensores</h5>
+                <p class="card-text">Monitore a umidade do solo em tempo real através dos sensores.</p>
+                <a href="/api/Sensores" class="btn btn-primary">Ver Sensores</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card pump-card">
+            <div class="card-body text-center">
+                <i class="fas fa-tint fa-3x text-info mb-3"></i>
+                <h5 class="card-title">Sistema de Bombas</h5>
+                <p class="card-text">Controle automatizado das bombas de irrigação.</p>
+                <a href="/api/Bombas" class="btn btn-info">Gerenciar Bombas</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Recursos do Sistema</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check text-success"></i> Monitoramento em tempo real</li>
+                    <li><i class="fas fa-check text-success"></i> Irrigação automatizada</li>
+                    <li><i class="fas fa-check text-success"></i> Alertas de umidade</li>
+                    <li><i class="fas fa-check text-success"></i> Histórico de ações</li>
+                    <li><i class="fas fa-check text-success"></i> Interface web e API REST</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Links Úteis</h5>
+            </div>
+            <div class="card-body">
+                <div class="list-group list-group-flush">
+                    <a href="/swagger" class="list-group-item list-group-item-action">
+                        <i class="fas fa-code"></i> Documentação da API
+                    </a>
+                    <a href="/Zonas" class="list-group-item list-group-item-action">
+                        <i class="fas fa-map"></i> Gerenciar Zonas
+                    </a>
+                    <a href="/api/Usuarios" class="list-group-item list-group-item-action">
+                        <i class="fas fa-users"></i> Usuários
+                    </a>
+                    <a href="/api/Propriedades" class="list-group-item list-group-item-action">
+                        <i class="fas fa-home"></i> Propriedades
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

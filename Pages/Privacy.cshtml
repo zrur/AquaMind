@@ -1,0 +1,63 @@
+@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Política de Privacidade";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Política de Privacidade do AquaMind</h2>
+            
+            <h3>1. Coleta de Informações</h3>
+            <p>
+                O AquaMind coleta informações sobre o uso do sistema de irrigação, incluindo:
+            </p>
+            <ul>
+                <li>Dados de sensores de umidade</li>
+                <li>Histórico de irrigação</li>
+                <li>Informações sobre propriedades e zonas</li>
+                <li>Logs de sistema e ações dos usuários</li>
+            </ul>
+
+            <h3>2. Uso das Informações</h3>
+            <p>
+                As informações coletadas são utilizadas para:
+            </p>
+            <ul>
+                <li>Otimizar o sistema de irrigação</li>
+                <li>Gerar relatórios e estatísticas</li>
+                <li>Melhorar a eficiência do uso da água</li>
+                <li>Manutenção e suporte técnico</li>
+            </ul>
+
+            <h3>3. Compartilhamento de Dados</h3>
+            <p>
+                Os dados coletados pelo AquaMind não são compartilhados com terceiros, 
+                exceto quando necessário para:
+            </p>
+            <ul>
+                <li>Cumprimento de obrigações legais</li>
+                <li>Suporte técnico autorizado</li>
+                <li>Manutenção do sistema</li>
+            </ul>
+
+            <h3>4. Segurança dos Dados</h3>
+            <p>
+                Implementamos medidas de segurança adequadas para proteger suas informações 
+                contra acesso não autorizado, alteração, divulgação ou destruição.
+            </p>
+
+            <h3>5. Contato</h3>
+            <p>
+                Para questões sobre esta política de privacidade, entre em contato através do 
+                sistema de suporte do AquaMind.
+            </p>
+
+            <p class="text-muted">
+                <small>Última atualização: @DateTime.Now.ToString("dd/MM/yyyy")</small>
+            </p>
+        </div>
+    </div>
+</div>
