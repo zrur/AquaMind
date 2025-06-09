@@ -355,14 +355,14 @@ curl -X POST "https://localhost:5001/api/Bombas" \
 ## Testes
 
 ### Teste via Swagger
-1. Acesse: https://localhost:5001/swagger
+1. Acesse: https://localhost:5182/swagger
 2. Escolha um endpoint
 3. Clique em "Try it out"
 4. Preencha os dados
 5. Execute e verifique a resposta
 
 ### Teste via Interface Web
-1. Acesse: https://localhost:5001/
+1. Acesse: https://localhost:5182/
 2. Navegue para "Zonas"
 3. Verifique a listagem
 
@@ -474,7 +474,7 @@ AquaMind.API/
 
 ## Contato
 
-- **Desenvolvedor**: Arthur
+- **Desenvolvedores**: Arthur, Robert, Marcos Ramalho
 - **GitHub**: [@zrur](https://github.com/zrur)
 - **Repositório**: [AquaMind](https://github.com/zrur/AquaMind)
 
